@@ -2,7 +2,8 @@ from sklearn.metrics import classification_report, accuracy_score
 
 # Sample size
 sample_size = 5210
-
+classifier = pipeline("zero-shot-classification",
+                      model="facebook/bart-large-mnli")
 # Use descriptive labels as ground truth
 sample_questions = df['Questions'][:sample_size].tolist()
 sample_true = df['Domain_descriptive'][:sample_size].tolist()
