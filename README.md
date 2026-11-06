@@ -121,7 +121,7 @@ The domain-to-description mapping is provided below:
 | About Place | questions about campus location and surroundings |
 | Multidisciplinary | questions involving multiple institutional services |
 
-These descriptive labels constitute the candidate-label set used in the zero-shot classification experiment. They are provided to ensure transparency and reproducibility of the experimental setup.
+**These descriptive labels constitute the candidate-label set used in the zero-shot classification experiment. They are provided to ensure transparency and reproducibility of the experimental setup.**
 ---
 ## 🎯 Use Cases
 
