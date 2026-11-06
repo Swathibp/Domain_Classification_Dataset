@@ -88,7 +88,41 @@ Each query is assigned one of 22 domain labels based on its primary institutiona
 | About Place | Campus location, surrounding environment, climate and accessibility. |
 
 ---
+### 🎯 Use CasesDescriptive Domain Label Mapping
 
+For the zero-shot classification experiment using BART-large-MNLI, each of the 22 institutional domains was represented by a descriptive natural-language label. These descriptions were manually formulated to provide semantic context to the candidate labels supplied to the classification model.
+
+The original domain labels were first cleaned by removing the suffix `"related query"`, wherever applicable. Subsequently, each cleaned domain was mapped to its corresponding descriptive phrase. The resulting descriptions were used as candidate labels during zero-shot classification.
+
+The domain-to-description mapping is provided below:
+
+| Domain | Descriptive Label |
+|---|---|
+| Hostel | questions about hostel facilities and accommodation |
+| Admission | questions about admission process and eligibility |
+| Placement | questions about campus placement opportunities |
+| Library | questions about library services and resources |
+| Sports | questions about sports activities and facilities |
+| Research | questions about research programs and activities |
+| Grade | questions about grading and academic performance |
+| Faculty | questions about faculty members and teaching staff |
+| Internship | questions about internship opportunities |
+| Transportation | questions about campus transportation services |
+| Infrastructure | questions about campus infrastructure and facilities |
+| Counselling | questions about student counselling services |
+| Teaching | questions about teaching methods and classes |
+| College | questions about general college information |
+| Canteen/Mess | questions about canteen and mess facilities |
+| Higher-Studies | questions about higher studies and postgraduate options |
+| Semester abroad | questions about semester abroad programs |
+| Student clubs | questions about student clubs and extracurricular activities |
+| Start ups | questions about startup and entrepreneurship support |
+| Curricullum | questions about curriculum and course structure |
+| About Place | questions about campus location and surroundings |
+| Multidisciplinary | questions involving multiple institutional services |
+
+These descriptive labels constitute the candidate-label set used in the zero-shot classification experiment. They are provided to ensure transparency and reproducibility of the experimental setup.
+---
 ## 🎯 Use Cases
 
 This dataset can be used for:
@@ -127,8 +161,9 @@ Domain_Classification_Dataset/
 │ 04_jaccard_similarity_heatmap.py
 │ 05_zipf_analysis.py
 │ 06_pca_visualization.py
-│ 07_zero_shot_classification.py
-│
+| 07_Domain_Descriptive_Mapping.py
+│ 08_zero_shot_classification.py
+
 
 ## ⚙️ Reproducibility and Evaluation Scripts
 
