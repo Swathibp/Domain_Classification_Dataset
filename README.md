@@ -88,7 +88,7 @@ Each query is assigned one of 22 domain labels based on its primary institutiona
 | About Place | Campus location, surrounding environment, climate and accessibility. |
 
 ---
-### 🎯 Use CasesDescriptive Domain Label Mapping
+### 🎯 Descriptive Domain Label Mapping
 
 For the zero-shot classification experiment using BART-large-MNLI, each of the 22 institutional domains was represented by a descriptive natural-language label. These descriptions were manually formulated to provide semantic context to the candidate labels supplied to the classification model.
 
